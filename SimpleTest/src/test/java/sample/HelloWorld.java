@@ -20,6 +20,10 @@ public class HelloWorld {
 		 
 		 	WebDriverManager.chromedriver().setup();
 		 	ChromeOptions options = new ChromeOptions();
+		 	
+		 	/*options.addArguments("--no-sandbox");
+		 	options.addArguments("--disable-dev-shm-usage");
+		 	options.addArguments("--headless");*/
 			options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
 			System.out.println("Launching chrome browser");
 			WebDriver driver=new ChromeDriver(options);
@@ -28,6 +32,7 @@ public class HelloWorld {
 			driver.get("https://www.google.com");
 			System.out.println("Title of the Page :>>>>>"+driver.getTitle());
 			driver.close();
+			
 	}
 
 }

@@ -5,6 +5,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <groupId>SimpleTest</groupId>
   <artifactId>SimpleTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
 
 <dependencies>
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
